@@ -62,7 +62,7 @@ function Profile() {
             I&apos;m usually doing or learning something interesting, or at
             least I hope I am. You can find my occasional sitreps (rants?) in my{' '}
             <a
-              href="/ongoing"
+              href="/#/ongoing"
               className="text-cyan-800 font-medium hover:underline"
             >
               ongoing
