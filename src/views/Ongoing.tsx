@@ -30,7 +30,8 @@ function Ongoing() {
         />
         <p className="text-gray-700 mb-4">
           Now that I&apos;ve more or less finished the crux of this website, I
-          kinda have to figure out what I want to do next.
+          kinda have to figure out what I want to do next (other than adding a
+          Dark Mode).
           <br />
           <br />I guess I could do something like a Telegram bot, a game like
           Wordle to strengthen my Javascript skills...

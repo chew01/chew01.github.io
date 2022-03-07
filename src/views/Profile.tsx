@@ -79,6 +79,9 @@ function Profile() {
               <em>(yes, the MERN stack essentially)</em>
             </li>
             <li>Java SE</li>
+            <li>
+              Git workflows (not sure if you can count this as a skill...)
+            </li>
           </ul>
 
           <h3 className="text-gray-700 font-bold ">
