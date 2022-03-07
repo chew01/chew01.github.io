@@ -68,10 +68,23 @@ function Profile() {
             corner.
           </p>
 
+          <h3 className="text-gray-700 font-bold ">I can do:</h3>
+          <ul className="text-gray-700 list-disc ml-8 mb-4">
+            <li>
+              HTML, CSS (though I prefer using Tailwind to writing my own
+              stylesheets these days)
+            </li>
+            <li>
+              Javascript & Typescript: Express, React, Node.js{' '}
+              <em>(yes, the MERN stack essentially)</em>
+            </li>
+            <li>Java SE</li>
+          </ul>
+
           <h3 className="text-gray-700 font-bold ">
             Somewhat important events...
           </h3>
-          <ul className="text-gray-700 m-2 leading-snug flex flex-col gap-3">
+          <ul className="text-gray-700 m-4 leading-snug flex flex-col gap-3">
             <li>
               <strong>2021:</strong> Completed 2 years of mandatory military
               service in the <strong>Singapore Armed Forces</strong>, serving as
