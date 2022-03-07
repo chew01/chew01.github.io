@@ -1,6 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useMatch, useResolvedPath } from 'react-router-dom';
+import type { LinkProps } from 'react-router-dom';
 import { ReactComponent as ReactLogo } from '../assets/gitpushbored.svg';
+
+function SmartLink({ children, to }: LinkProps) {
+  const resolved = useResolvedPath(to);
+  const match = useMatch({ path: resolved.pathname, end: true });
+
+  return (
+    <Link
+      className={`hover:text-gray-900 transition duration-300 ${
+        match ? 'text-gray-900' : 'text-gray-400'
+      }`}
+      to={to}
+    >
+      {children}
+    </Link>
+  );
+}
 
 function Header() {
   return (
@@ -14,24 +31,8 @@ function Header() {
         </Link>
       </h1>
       <nav className="px-4 flex flex-col font-jbm font-bold text-right sm:text-left sm:ml-20">
-        <Link
-          to="/profile"
-          className="text-gray-400 hover:text-gray-900 transition duration-300"
-        >
-          profile
-        </Link>
-        <Link
-          to="/projects"
-          className="text-gray-400 hover:text-gray-900 transition duration-300"
-        >
-          projects
-        </Link>
-        <Link
-          to="/blog"
-          className="text-gray-400 hover:text-gray-900 transition duration-300"
-        >
-          blog
-        </Link>
+        <SmartLink to="/profile">profile</SmartLink>
+        <SmartLink to="/ongoing">ongoing</SmartLink>
       </nav>
     </header>
   );

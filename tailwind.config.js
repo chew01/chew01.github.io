@@ -4,6 +4,7 @@ module.exports = {
     fontFamily: {
       osw: ['Oswald'],
       jbm: ['JetBrainsMono'],
+      psn: ['PTSansNarrow'],
     },
     extend: {},
   },

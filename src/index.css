@@ -43,3 +43,10 @@
   font-weight: 700;
   src: url('./assets/fonts/Oswald-Bold.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'PTSansNarrow';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/PTSansNarrow-Bold.ttf') format('truetype');
+}
