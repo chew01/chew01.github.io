@@ -4,6 +4,7 @@ import Main from '../components/Main';
 import Sidebar from '../components/Sidebar';
 
 function Ongoing() {
+  document.title = 'Ongoing | Git Push Bored';
   return (
     <>
       <Header />

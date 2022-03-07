@@ -4,6 +4,8 @@ import Main from '../components/Main';
 import Sidebar from '../components/Sidebar';
 
 function Profile() {
+  document.title = 'Profile | Git Push Bored';
+
   return (
     <>
       <Header />
