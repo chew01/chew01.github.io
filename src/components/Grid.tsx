@@ -3,6 +3,7 @@ import Card from './Card';
 import Jeanne from '../assets/card_bg/jeanne.png';
 import ExpressBlog from '../assets/card_bg/express-blog.png';
 import Flipper from '../assets/card_bg/flipper.png';
+import Pepe from '../assets/transparent_pepe.png';
 
 function Grid() {
   return (
@@ -28,6 +29,10 @@ function Grid() {
         link="https://github.com/chew01/fake-bird-test"
         link_descriptor="View on Github"
       />
+      <div className="absolute hidden 2xl:block right-0 bottom-5 text-gray-600">
+        <img src={Pepe} alt="" className="-scale-x-100" />
+        It&apos;s pretty empty here, I know. We&apos;ll get there one day.
+      </div>
     </section>
   );
 }
